@@ -1,6 +1,7 @@
 body{
     color: white;
     background-color: #1E2329;
+    font-family: 'Share Tech Mono', monospace;
 }
 
 
@@ -33,8 +34,33 @@ header{
 #home article{
     text-align: center;
     background-color: #1E2329;
-    margin-left: 20%;
-    margin-right: 20%;
-    padding-top: 50px;
-    padding-bottom: 50px;
+    margin-left: 10%;
+    margin-right: 10%;
+    padding: 50px 15px;
+    box-shadow: 0px 5px 17px black;
+}
+
+
+
+#title div{
+    margin-top: 40px;
+}
+
+#title h4{
+    margin-left: 50px;
+
+}
+
+
+#music .row{
+    margin: unset;
+}
+
+#music .music{
+    margin: 15px 30px;
+}
+
+#music iframe{
+    width: 100%;
+    height: 300px;
 }
