@@ -1,0 +1,40 @@
+body{
+    color: white;
+    background-color: #1E2329;
+}
+
+
+
+.container {
+    max-width: 1060px;
+    margin-left: auto;
+    margin-right: auto;
+}
+@media (max-width: 767px) {
+    .container {
+        width: 90%;
+    }
+}
+
+
+
+header{
+    background-image: url("navbar.gif");
+    padding-bottom: 2px;
+}
+
+#home{
+    background-image: url("background13.png");
+    background-size: contain;
+    background-position: center;
+
+}
+
+#home article{
+    text-align: center;
+    background-color: #1E2329;
+    margin-left: 20%;
+    margin-right: 20%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
