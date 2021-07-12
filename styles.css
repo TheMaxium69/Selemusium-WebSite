@@ -54,15 +54,15 @@ nav a:hover{
 }
 
 
-
-#title div{
-    margin-top: 40px;
+#title h2 {
+    margin-top: 60px;
+    color:  white;
+    margin-left: -30px;
 }
-
-#title h4{
-    margin-left: 50px;
+#music{
+    margin-top: 50px;
+    margin-bottom: 100px;
 }
-
 
 #music .row{
     margin: unset;
@@ -70,7 +70,7 @@ nav a:hover{
 
 #music .music{
     background-color: #272c36;
-    margin: 15px 30px;
+    margin: 15px 0px;
 }
 
 #music .iframe{
@@ -81,6 +81,50 @@ nav a:hover{
     width: 100%;
     height: 300px;
 }
+
+
+
+
+
+
+#nosreseau h2 {
+    margin-top: 60px;
+    color:  white;
+    margin-left: -30px;
+}
+#nosreseau ul {
+    padding: 50px 0;
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+
+}
+#nosreseau ul li {
+    background: linear-gradient(#0034ff, #01256a);
+    margin: 10px;
+    box-shadow: 2px 3px 8px rgba(0, 0, 0, 0.3);
+    padding: 20px;
+}
+
+#nosreseau ul li#discord {
+    background: linear-gradient(#f11fff, #85008e);
+}
+#nosreseau ul li h3{
+    font-weight: bold;
+    padding: 20px;
+}
+
+#nosreseau img.imgRe{
+    width: 50px;
+    height: 50px;
+}
+
+#nosreseau a:hover{
+    color: white;
+}
+
+
+
 
 #footer{
     background-image: url("navbar.gif");
