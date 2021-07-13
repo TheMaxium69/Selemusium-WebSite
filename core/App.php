@@ -5,7 +5,7 @@ class App
     
     public static function process()
     {
-        $controllerName = "home";
+        $controllerName = "music";
         $task = "index";
 
             if(!empty($_GET['controller'])){

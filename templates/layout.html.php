@@ -18,13 +18,13 @@
     <nav id="fixed" class="navbar navbar-expand-lg fixed-top">
         <a class="navbar-brand title" href="#">
             <img src="https://tyrolium.fr/Contenu/Image/Tyrolium%20Music%20Site.png" width="30" height="30" class="d-inline-block align-top" alt="">
-            TyroMusic
+            <?php echo $projectName ?>
         </a>
     </nav>
     <nav id="notfixed" class="navbar">
         <a class="navbar-brand title" href="#">
             <img src="https://tyrolium.fr/Contenu/Image/Tyrolium%20Music%20Site.png" width="30" height="30" class="d-inline-block align-top" alt="">
-            TyroMusic
+            <?php echo $projectName ?>
         </a>
     </nav>
 </header>
@@ -36,7 +36,7 @@
          <div class="container text-white d-flex align-items-center justify-content-between">
              <a id="logo1" href="#"><img src="http://tyrolium.fr/Contenu/Image/Tyrolium%20Music%20Site.png" alt="logo-tyrolium-serv"></a>
              <span>2020-2021 © <a href="http://tyrolium.fr/">TYROLIUM</a><br>Entreprise Create by Maxime Tournier<br>Music Create by Norman Jorge De Freitas</span>
-             <button onclick="window.location.href = '#comment';" type="button" class="btn btn-primary">None</button>
+             <button onclick="window.location.href = '#comment';" type="button" class="btn btn-primary">Panel</button>
          </div>
      </footer>
  </section>
