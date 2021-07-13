@@ -6,7 +6,7 @@ namespace Controllers;
 class Home extends Controller
 {
 
-    protected $modelName = \Model\Exemple::class;
+    protected $modelName = \Model\Home::class;
     
 
     /**
@@ -15,12 +15,10 @@ class Home extends Controller
 
     public function index()
     {
-
-
         $exemple = "votre contenue";
 
         //on fixe le titre de la page
-        $titreDeLaPage = "titre d'une page";
+        $titreDeLaPage = "TyroMusic";
 
         //on affiche
         \Rendering::render("home/home",
