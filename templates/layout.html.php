@@ -4,6 +4,7 @@
     <title><?php echo $titreDeLaPage ?></title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://tyrolium.fr/Contenu/Image/Selenium%20Site.png" rel="shortcut icon">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link href="styles.css" rel="stylesheet">
 
@@ -17,14 +18,14 @@
 <header>
     <nav id="fixed" class="navbar navbar-expand-lg fixed-top">
         <a class="navbar-brand title" href="#">
-            <img src="https://tyrolium.fr/Contenu/Image/Tyrolium%20Music%20Site.png" width="30" height="30" class="d-inline-block align-top" alt="">
-            <?php echo $projectName ?>
+            <img src="https://tyrolium.fr/Contenu/Image/Selenium%20Site.png" width="30" height="30" class="d-inline-block align-top" alt="logo-selenium">
+            Sélénium
         </a>
     </nav>
     <nav id="notfixed" class="navbar">
         <a class="navbar-brand title" href="#">
-            <img src="https://tyrolium.fr/Contenu/Image/Tyrolium%20Music%20Site.png" width="30" height="30" class="d-inline-block align-top" alt="">
-            <?php echo $projectName ?>
+            <img src="https://tyrolium.fr/Contenu/Image/Selenium%20Site.png" width="30" height="30" class="d-inline-block align-top" alt="logo-selenium">
+            Sélénium
         </a>
     </nav>
 </header>
@@ -34,9 +35,9 @@
  <section id="footer">
      <footer>
          <div class="container text-white d-flex align-items-center justify-content-between">
-             <a id="logo1" href="#"><img src="http://tyrolium.fr/Contenu/Image/Tyrolium%20Music%20Site.png" alt="logo-tyrolium-serv"></a>
+             <a id="logo1" href="#"><img src="https://tyrolium.fr/Contenu/Image/Selenium%20Site.png" alt="logo-selenium"></a>
              <span>2020-2021 © <a href="http://tyrolium.fr/">TYROLIUM</a><br>Entreprise Create by Maxime Tournier<br>Music Create by Norman Jorge De Freitas</span>
-             <button onclick="window.location.href = '#comment';" type="button" class="btn btn-primary">Panel</button>
+             <button onclick="window.location.href = '#';" type="button" class="btn">Panel</button>
          </div>
      </footer>
  </section>

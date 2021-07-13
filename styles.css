@@ -84,6 +84,9 @@ nav a:hover{
     height: 300px;
 }
 
+#music a{
+    background-color: #0000a3;
+}
 
 
 
@@ -99,7 +102,7 @@ nav a:hover{
     display: flex;
     text-align: center;
     justify-content: space-between;
-
+    list-style: none;
 }
 #nosreseau ul li {
     background: linear-gradient(#0034ff, #01256a);
@@ -121,6 +124,9 @@ nav a:hover{
     height: 50px;
 }
 
+#nosreseau a{
+    color: white;
+}
 #nosreseau a:hover{
     color: white;
 }
@@ -151,4 +157,8 @@ footer a{
 
 footer a:hover{
     color: white;
+}
+
+footer button.btn{
+    background-color: #0000a3;
 }

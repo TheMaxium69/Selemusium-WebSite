@@ -11,13 +11,31 @@ class Music extends Controller
 
         $musics = $this->model->findAll($this->modelName);
 
-        $titreDeLaPage = "TyroMusic";
+        $titreDeLaPage = "Sélénium";
 
-        $projectName = 'Insert un name';
 
         \Rendering::render("music/home",
-            compact( 'titreDeLaPage', 'musics', 'projectName')
+            compact( 'titreDeLaPage', 'musics')
         );
+
+    }
+
+    public function indexApi()
+    {
+
+        if (!empty($_GET['id'])){
+            $musicId = $_GET['id'];
+            $music = $this->model->find($musicId);
+
+        }else{
+
+            $music = $this->model->findAll($this->modelName);
+        }
+
+        header('Access-Control-Allow-Origin: *');
+
+        //Json
+        echo json_encode($music);
 
     }
 
