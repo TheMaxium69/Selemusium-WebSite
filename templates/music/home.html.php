@@ -60,7 +60,20 @@
                 <a target="_blank" href="https://discord.gg/km8h5jHezt">Rejoindre</a>
             </li>
         </ul>
-
-
     </section>
 </main>
+
+<section id="footer">
+    <footer>
+        <div class="container text-white d-flex align-items-center justify-content-between">
+            <a id="logo1" href="#"><img src="https://tyrolium.fr/Contenu/Image/Selenium%20Site.png" alt="logo-selenium"></a>
+            <span>2020-2021 © <a href="http://tyrolium.fr/">TYROLIUM</a><br>Entreprise Create by Maxime Tournier<br>Music Create by Norman Jorge De Freitas</span>
+           <?php if(!$_SESSION){?>
+               <button onclick="window.location.href = 'index.php?controller=user&task=login';" type="button" class="btn">Panel</button>
+           <?php } else { ?>
+               <button onclick="window.location.href = 'index.php?controller=user&task=login';" type="button" class="btn"><?php $tabUser = $_SESSION['user'];
+                   echo $tabUser['name']; ?></button>
+           <?php } ?>
+        </div>
+    </footer>
+</section>
