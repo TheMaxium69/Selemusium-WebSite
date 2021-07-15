@@ -20,21 +20,32 @@
     <section id="music" class="container">
 
 
-        <?php foreach($musics as $music){?>
-        <div class="card music">
-            <div class="row">
-                <div class="iframe">
-                    <iframe scrolling="no" frameborder="no" allow="autoplay" src="<?php echo $music->iframe; ?>"></iframe>
+        <?php
+        $temp = 0;
+        $nbMusic = ($nbBtn+1) *5;
+
+        foreach($musics as $music){
+
+            $temp = $temp + 1;
+
+            if($temp <= $nbMusic){
+                ?>
+                <div class="card music">
+                    <div class="row">
+                        <div class="iframe">
+                            <iframe scrolling="no" frameborder="no" allow="autoplay" src="<?php echo $music->iframe; ?>"></iframe>
+                        </div>
+                        <div class="card-body">
+                            <h4 class="card-title"><?php echo $music->title; ?></h4>
+                            <p class="card-text"><?php echo $music->description; ?></p>
+                            <p class="card-text"><?php echo $music->credit; ?></p>
+                            <a href="<?php echo $music->url; ?>" class="btn btn-primary"><!--img class="icon" src="http://tyrolium.fr/Contenu/Image/icone/soundcloudWhite.png" alt="soundcloud"/>-->Lien vers la music</a>
+                        </div>
+                    </div>
                 </div>
-                <div class="card-body">
-                    <h4 class="card-title"><?php echo $music->title; ?></h4>
-                    <p class="card-text"><?php echo $music->description; ?></p>
-                    <p class="card-text"><?php echo $music->credit; ?></p>
-                    <a href="<?php echo $music->url; ?>" class="btn btn-primary"><!--img class="icon" src="http://tyrolium.fr/Contenu/Image/icone/soundcloudWhite.png" alt="soundcloud"/>-->Lien vers la music</a>
-                </div>
-            </div>
-        </div>
-        <?php } ?>
+            <?php  }else if($temp == ($nbMusic+1) ){ ?>
+                <a href="index.php?controller=music&task=index&nb=<?php echo $nbBtn+1 ?>" class="btn btn-primary">Plus</a>
+        <?php } } ?>
 
     </section>
     <hr class="container" style="background-color: #808080">

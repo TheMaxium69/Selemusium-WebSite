@@ -11,11 +11,22 @@ class Music extends Controller
 
         $musics = $this->model->findAll($this->modelName);
 
+
+        if(!empty($_GET['nb']) && $_GET['nb'] != 0){
+            $nbBtn = $_GET['nb'];
+        }else{
+            $nbBtn = 0;
+        }
+
+
+
+
+
         $titreDeLaPage = "Sélénium";
 
 
         \Rendering::render("music/home",
-            compact( 'titreDeLaPage', 'musics')
+            compact( 'titreDeLaPage', 'musics', 'nbBtn')
         );
 
     }

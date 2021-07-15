@@ -33,13 +33,11 @@
 
 <style>
     html{
-
         background-color: #1E2329;
     }
     #formPanel{
         height: 100%;
         margin-top: 130px;
-        padding-bottom: 100%;
         margin-left: 80px;
         margin-right: 80px;
 
