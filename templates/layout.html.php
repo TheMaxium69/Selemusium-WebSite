@@ -37,7 +37,7 @@
          <div class="container text-white d-flex align-items-center justify-content-between">
              <a id="logo1" href="#"><img src="https://tyrolium.fr/Contenu/Image/Selenium%20Site.png" alt="logo-selenium"></a>
              <span>2020-2021 © <a href="http://tyrolium.fr/">TYROLIUM</a><br>Entreprise Create by Maxime Tournier<br>Music Create by Norman Jorge De Freitas</span>
-             <button onclick="window.location.href = '#';" type="button" class="btn">Panel</button>
+             <button onclick="window.location.href = 'index.php?controller=user&task=index';" type="button" class="btn">Panel</button>
          </div>
      </footer>
  </section>
