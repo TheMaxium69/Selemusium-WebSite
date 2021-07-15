@@ -19,5 +19,16 @@ class Music extends Model
     public $url;
 
 
+    function count()
+    {
+        $request =  $this->pdo->prepare("SELECT * FROM music");
+        $request->execute();
+
+        $totalMusic = $request->rowCount();
+        return $totalMusic;
+
+    }
+
+
 
 }

@@ -10,7 +10,7 @@ class Music extends Controller
     {
 
         $musics = $this->model->findAll($this->modelName);
-
+        $total = $this->model->count();
 
         if(!empty($_GET['nb']) && $_GET['nb'] != 0){
             $nbBtn = $_GET['nb'];
@@ -26,7 +26,7 @@ class Music extends Controller
 
 
         \Rendering::render("music/home",
-            compact( 'titreDeLaPage', 'musics', 'nbBtn')
+            compact( 'titreDeLaPage', 'musics', 'nbBtn', 'total')
         );
 
     }

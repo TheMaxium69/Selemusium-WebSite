@@ -24,6 +24,12 @@
         $temp = 0;
         $nbMusic = ($nbBtn+1) *5;
 
+        if ($nbMusic >= $total){ ?>
+            <p id="conteur"> <?php echo $total . " / ".  $total . "<br>"; ?></p>
+        <?php } else{ ?>
+            <p id="conteur"> <?php echo $nbMusic . " / ".  $total . "<br>"; ?></p>
+        <?php }
+
         foreach($musics as $music){
 
             $temp = $temp + 1;
@@ -43,9 +49,23 @@
                         </div>
                     </div>
                 </div>
-            <?php  }else if($temp == ($nbMusic+1) ){ ?>
-                <a href="index.php?controller=music&task=index&nb=<?php echo $nbBtn+1 ?>" class="btn btn-primary">Plus</a>
-        <?php } } ?>
+            <?php
+        } }
+
+        if ($nbMusic >= $total){
+            ?>
+
+            <a id="musicAffiche" href="index.php" class="btn btn-primary">retours</a>
+
+            <?php
+
+        } else { ?>
+
+            <a id="musicAffiche" href="index.php?controller=music&task=index&nb=<?php echo $nbBtn+1 ?>" class="btn btn-primary">Plus</a>
+
+        <?php }
+
+        ?>
 
     </section>
     <hr class="container" style="background-color: #808080">
