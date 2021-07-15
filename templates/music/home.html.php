@@ -30,7 +30,7 @@
                     <h4 class="card-title"><?php echo $music->title; ?></h4>
                     <p class="card-text"><?php echo $music->description; ?></p>
                     <p class="card-text"><?php echo $music->credit; ?></p>
-                    <a href="<?php echo $music->url; ?>" class="btn"><!--img class="icon" src="http://tyrolium.fr/Contenu/Image/icone/soundcloudWhite.png" alt="soundcloud"/>-->Lien vers la music</a>
+                    <a href="<?php echo $music->url; ?>" class="btn btn-primary"><!--img class="icon" src="http://tyrolium.fr/Contenu/Image/icone/soundcloudWhite.png" alt="soundcloud"/>-->Lien vers la music</a>
                 </div>
             </div>
         </div>
@@ -69,10 +69,10 @@
             <a id="logo1" href="#"><img src="https://tyrolium.fr/Contenu/Image/Selenium%20Site.png" alt="logo-selenium"></a>
             <span>2020-2021 © <a href="http://tyrolium.fr/">TYROLIUM</a><br>Entreprise Create by Maxime Tournier<br>Music Create by Norman Jorge De Freitas</span>
            <?php if(!$_SESSION){?>
-               <button onclick="window.location.href = 'index.php?controller=user&task=login';" type="button" class="btn">Panel</button>
+               <button onclick="window.location.href = 'index.php?controller=user&task=login';" type="button" class="btn btn-primary">Panel</button>
            <?php } else { ?>
-               <button onclick="window.location.href = 'index.php?controller=user&task=login';" type="button" class="btn"><?php $tabUser = $_SESSION['user'];
-                   echo $tabUser['name']; ?></button>
+               <button onclick="window.location.href = 'index.php?controller=user&task=loggout';" type="button" class="btn btn-danger"><?php $tabUser = $_SESSION['user'];
+                   echo "Deconnecter de ".$tabUser['name']; ?></button>
            <?php } ?>
         </div>
     </footer>

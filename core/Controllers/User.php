@@ -33,4 +33,11 @@ class User extends Controller
 
     }
 
+
+    public function loggout()
+    {
+        session_unset();
+        \Http::redirect('index.php?controller=music&task=index');
+    }
+
 }
