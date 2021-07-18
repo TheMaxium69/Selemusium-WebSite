@@ -18,10 +18,6 @@ class Music extends Controller
             $nbBtn = 0;
         }
 
-
-
-
-
         $titreDeLaPage = "Sélénium";
 
 
