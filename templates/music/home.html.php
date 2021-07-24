@@ -42,10 +42,14 @@
                             <iframe scrolling="no" frameborder="no" allow="autoplay" src="<?php echo $music->iframe; ?>"></iframe>
                         </div>
                         <div class="card-body">
-                            <h4 class="card-title"><?php echo $music->title; ?></h4>
+                            <h4 class="card-title"><?php echo $title = strtoupper($music->title); ?></h4>
+                            <div class="container">
                             <p class="card-text"><?php echo $music->description; ?></p>
+                            </div>
+                            <div class="container">
                             <p class="card-text"><?php echo $music->credit; ?></p>
                             <a href="<?php echo $music->url; ?>" class="btn btn-primary"><!--img class="icon" src="http://tyrolium.fr/Contenu/Image/icone/soundcloudWhite.png" alt="soundcloud"/>-->Lien vers la music</a>
+                            </div>
                         </div>
                     </div>
                 </div>
