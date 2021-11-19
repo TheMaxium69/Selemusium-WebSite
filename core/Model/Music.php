@@ -17,6 +17,7 @@ class Music extends Model
     public $credit;
     public $iframe;
     public $url;
+    public $host;
 
 
     function count()

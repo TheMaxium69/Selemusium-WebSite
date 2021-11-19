@@ -2,13 +2,12 @@
     <section id="home">
         <div class="container">
             <article>
-                <h2 class="title">Sélénium</h2>
+                <h2 class="title">Sélémusium</h2>
                 <br>
-                <h5>J'arrive dans mon astéroïde pour prendre ma place dans le rap<br>
-                    En étant dans mon univers c'est de la réalité que je réchappe</h5>
+                <h5>Lorem Ipsum is simply dummy text of the printing and typesetting industry<br>
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry</h5>
                 <br>
-                <p>Je suis Rayqua je me lance dans le rap par passion et aussi parce que les gens me disent que j'ai un petit talent pour ça.
-                    Mon projet Sélénium est là pour me permettre de m'échapper du monde et pour partager mes productions.</p>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, </p>
             </article>
         </div>
     </section>
@@ -39,7 +38,13 @@
                 <div class="card music">
                     <div class="row">
                         <div class="iframe">
-                            <iframe scrolling="no" frameborder="no" allow="autoplay" src="<?php echo $music->iframe; ?>"></iframe>
+                            <iframe class="a<?php echo $music->host; ?>" scrolling="no" frameborder="no" allow="autoplay" src="http://localhost/insta.html"></iframe>
+                            <style>
+                                div.Header{
+                                    display: none;
+                                }
+
+                            </style>
                         </div>
                         <div class="card-body">
                             <h4 class="card-title"><?php echo $title = strtoupper($music->title); ?></h4>
@@ -56,14 +61,18 @@
             <?php
         } }
 
-        if ($nbMusic >= $total){
+        if ($nbMusic > $total){
             ?>
 
             <a id="musicAffiche" href="index.php" class="btn btn-primary">retours</a>
 
             <?php
 
-        } else { ?>
+        } else if ($nbMusic <= $total ){ ?>
+
+
+
+        <?php } else { ?>
 
             <a id="musicAffiche" href="index.php?controller=music&task=index&nb=<?php echo $nbBtn+1 ?>" class="btn btn-primary">Plus</a>
 
@@ -101,8 +110,8 @@
 <section id="footer">
     <footer>
         <div class="container text-white d-flex align-items-center justify-content-between">
-            <a id="logo1" href="#"><img src="https://tyrolium.fr/Contenu/Image/Selenium%20Site.png" alt="logo-selenium"></a>
-            <span>2020-2021 © <a href="http://tyrolium.fr/">TYROLIUM</a><br>Entreprise Create by Maxime Tournier<br>Music Create by Norman Jorge De Freitas</span>
+            <a id="logo1" href="#"><img src="https://tyrolium.fr/Contenu/Image/Selemusium%20Site.png" alt="logo-selenium"></a>
+            <span>2020-2021 © SÉLÉMUSIUM<br>All Right Reserved © <a href="http://tyrolium.fr/"> TYROLIUM</a><br>Create by Maxime Tournier</span>
            <?php if(!$_SESSION){?>
                <button onclick="window.location.href = 'index.php?controller=user&task=login';" type="button" class="btn btn-primary">Panel</button>
            <?php } else { ?>

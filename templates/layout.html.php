@@ -4,7 +4,7 @@
     <title><?php echo $titreDeLaPage ?></title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://tyrolium.fr/Contenu/Image/Selenium%20Site.png" rel="shortcut icon">
+    <link href="https://tyrolium.fr/Contenu/Image/Selemusium%20Site.png" rel="shortcut icon">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link href="styles.css" rel="stylesheet">
 
@@ -18,14 +18,14 @@
 <header>
     <nav id="fixed" class="navbar navbar-expand-lg fixed-top">
         <a class="navbar-brand title" href="#">
-            <img src="https://tyrolium.fr/Contenu/Image/Selenium%20Site.png" width="30" height="30" class="d-inline-block align-top" alt="logo-selenium">
-            Sélénium
+            <img src="https://tyrolium.fr/Contenu/Image/Selemusium%20Site.png" width="30" height="30" class="d-inline-block align-top" alt="logo-selenium">
+            Sélémusium
         </a>
     </nav>
     <nav id="notfixed" class="navbar">
         <a class="navbar-brand title" href="#">
-            <img src="https://tyrolium.fr/Contenu/Image/Selenium%20Site.png" width="30" height="30" class="d-inline-block align-top" alt="logo-selenium">
-            Sélénium
+            <img src="https://tyrolium.fr/Contenu/Image/Selemusium%20Site.png" width="30" height="30" class="d-inline-block align-top" alt="logo-selenium">
+            Sélémusium
         </a>
     </nav>
 </header>

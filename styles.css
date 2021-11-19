@@ -79,10 +79,17 @@ nav a:hover{
     height: 299px;
 }
 
-#music iframe{
+#music iframe.a0{
     width: 100%;
     height: 300px;
 }
+
+#music iframe.a1{
+    width: 100%;
+    height: 300px;
+    padding-top: -55px;
+}
+
 
 #music a{
     background-color: #0000a3;
