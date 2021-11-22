@@ -100,7 +100,7 @@
                 <img class="imgRe" src="https://tyrolium.fr/Contenu/Image/icone/soundcloudWhite.png" alt="soundcloud">
                 <h3 class="title">SoundCloud</h3>
                 <p>Ici je poste mes productions musicales "work in progress" et mes prods finies que vous pouvez écouter gratuitement bien évidemment.</p>
-                <a target="_blank" href="#">Nous Follow</a>
+                <a target="_blank" href="https://soundcloud.com/selemusium">Nous Follow</a>
             </li>
             <li class="col align-self-center">
                 <img class="imgRe" src="https://tyrolium.fr/Contenu/Image/icone/discordWhite.png" alt="discord">
