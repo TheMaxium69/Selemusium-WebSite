@@ -14,13 +14,12 @@ class User extends Controller
         if(!empty($_POST['username']) && !empty($_POST['password'])){
             $usernameLogin = $_POST['username'];
             $passwordLogin = $_POST['password'];
-            echo "coucou";
             $resultLogin = $this->model->login($usernameLogin, $passwordLogin);
-            echo "coucouZ";
             if($resultLogin){
                 \Http::redirect('index.php?controller=music&task=index');
             }else{
                 $reponse = "Erreur de connexion";
+                \Http::redirect('index.php?controller=music&task=index');
             }
 
         }

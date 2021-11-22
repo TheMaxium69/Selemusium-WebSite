@@ -4,10 +4,8 @@
             <article>
                 <h2 class="title">Sélémusium</h2>
                 <br>
-                <h5>Lorem Ipsum is simply dummy text of the printing and typesetting industry<br>
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry</h5>
-                <br>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, </p>
+                <h5>Projet musical de l'entreprise Tyrolium,<br> qui réalise tout son branding musicial<br>
+                mais qui aussi réalise des remix et musique original <br> qui les passionne et nous les mettons en avant ici</h5>
             </article>
         </div>
     </section>
@@ -36,24 +34,29 @@
             if($temp <= $nbMusic){
                 ?>
                 <div class="card music">
-                    <div class="row">
+                    <div class="">
                         <div class="iframe">
-                            <iframe class="a<?php echo $music->host; ?>" scrolling="no" frameborder="no" allow="autoplay" src="http://localhost/insta.html"></iframe>
-                            <style>
-                                div.Header{
-                                    display: none;
-                                }
-
-                            </style>
+                            <iframe class="a<?php echo $music->host; ?>" scrolling="no" frameborder="no" allow="autoplay" src="<?php echo $music->iframe; ?>"></iframe>
                         </div>
-                        <div class="card-body">
-                            <h4 class="card-title"><?php echo $title = strtoupper($music->title); ?></h4>
-                            <div class="container">
-                            <p class="card-text"><?php echo $music->description; ?></p>
+                        <div class="card-body row">
+                            <div style="width: 100%;">
+                            <h4><?php echo $title = strtoupper($music->title); ?></h4>
+
+                            <p class="card-text container" style="margin-top: 15px"><?php echo $music->description; ?></p>
                             </div>
-                            <div class="container">
-                            <p class="card-text"><?php echo $music->credit; ?></p>
-                            <a href="<?php echo $music->url; ?>" class="btn btn-primary"><!--img class="icon" src="http://tyrolium.fr/Contenu/Image/icone/soundcloudWhite.png" alt="soundcloud"/>-->Lien vers la music</a>
+                            <div class=" col-9">
+
+                                <p class="card-text" style="margin-top: 15px">Auteur : <?php echo $music->credit; ?></p>
+
+                                <p class="card-text">Version : <?php echo $music->version; ?></p>
+                                <a href="<?php echo $music->url; ?>" class="btn btn-primary">Lien vers la music</a>
+                            </div>
+                            <div class="col-3">
+                                <p><u>Date du projet</u></p>
+                                <p class="card-text">Début : <?php echo $music->start_project; ?></p>
+                                <?php if(!empty($music->end_project)) { ?>
+                                <p class="card-text">Fin : <?php echo $music->end_project; ?></p>
+                                <?php } ?>
                             </div>
                         </div>
                     </div>
@@ -61,14 +64,15 @@
             <?php
         } }
 
-        if ($nbMusic > $total){
+        if ($nbMusic < $total){
+            var_dump($nbMusic, $total);
             ?>
 
             <a id="musicAffiche" href="index.php" class="btn btn-primary">retours</a>
 
             <?php
 
-        } else if ($nbMusic <= $total ){ ?>
+        } else if ($nbMusic >= $total ){ ?>
 
 
 
@@ -81,7 +85,7 @@
         ?>
 
     </section>
-    <hr class="container" style="background-color: #808080">
+    <hr class="" style="background-color: #808080">
     <section id="nosreseau" class="container">
         <h2 class="title">Nos Réseaux sociaux</h2>
         <ul>
@@ -89,7 +93,7 @@
                 <img class="imgRe" src="https://tyrolium.fr/Contenu/Image/icone/instagramWhite.png" alt="instagram">
                 <h3 class="title">Instagram</h3>
                 <p>Sur ce réseau social je poste mes avancées de productions musicales, vous pouvez donc suivre avec moi les étapes de mes créations.</p>
-                <a target="_blank" href="#">Nous Follow</a>
+                <a target="_blank" href="https://www.instagram.com/selemusium/">Nous Follow</a>
             </li>
             <li id="discord" class="col align-self-center">
                 <img class="imgRe" src="https://tyrolium.fr/Contenu/Image/icone/soundcloudWhite.png" alt="soundcloud">
@@ -111,13 +115,13 @@
     <footer>
         <div class="container text-white d-flex align-items-center justify-content-between">
             <a id="logo1" href="#"><img src="https://tyrolium.fr/Contenu/Image/Selemusium%20Site.png" alt="logo-selenium"></a>
-            <span>2020-2021 © SÉLÉMUSIUM<br>All Right Reserved © <a href="http://tyrolium.fr/"> TYROLIUM</a><br>Create by Maxime Tournier</span>
-           <?php if(!$_SESSION){?>
-               <button onclick="window.location.href = 'index.php?controller=user&task=login';" type="button" class="btn btn-primary">Panel</button>
-           <?php } else { ?>
-               <button onclick="window.location.href = 'index.php?controller=user&task=loggout';" type="button" class="btn btn-danger"><?php $tabUser = $_SESSION['user'];
-                   echo "Deconnecter de ".$tabUser['name']; ?></button>
-           <?php } ?>
+            <span>2021-2022 © SÉLÉMUSIUM<br>All Right Reserved © <a href="http://tyrolium.fr/"> TYROLIUM</a><br>Create by Maxime Tournier</span>
+            <?php if(!$_SESSION){?>
+                <button onclick="window.location.href = 'index.php?controller=user&task=login';" type="button" class="btn btn-primary">Panel</button>
+            <?php } else { ?>
+                <button onclick="window.location.href = 'index.php?controller=user&task=loggout';" type="button" class="btn btn-danger"><?php $tabUser = $_SESSION['user'];
+                    echo "Deconnecter de ".$tabUser['name']; ?></button>
+            <?php } ?>
         </div>
     </footer>
 </section>

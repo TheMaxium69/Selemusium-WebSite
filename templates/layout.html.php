@@ -16,7 +16,7 @@
 <body>
 
 <header>
-    <nav id="fixed" class="navbar navbar-expand-lg fixed-top">
+    <nav id="fixed" class="navbar fixed-top">
         <a class="navbar-brand title" href="#">
             <img src="https://tyrolium.fr/Contenu/Image/Selemusium%20Site.png" width="30" height="30" class="d-inline-block align-top" alt="logo-selenium">
             Sélémusium

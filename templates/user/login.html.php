@@ -24,9 +24,14 @@
 <section id="footer" class="fixed-bottom">
     <footer>
         <div class="container text-white d-flex align-items-center justify-content-between">
-            <a id="logo1" href="#"><img src="https://tyrolium.fr/Contenu/Image/Selenium%20Site.png" alt="logo-selenium"></a>
-            <span>2020-2021 © <a href="http://tyrolium.fr/">TYROLIUM</a><br>Entreprise Create by Maxime Tournier<br>Music Create by Norman Jorge De Freitas</span>
-            <button onclick="window.location.href = 'index.php';" type="button" class="btn btn-primary">Retour</button>
+            <a id="logo1" href="#"><img src="https://tyrolium.fr/Contenu/Image/Selemusium%20Site.png" alt="logo-selenium"></a>
+            <span>2021-2022 © SÉLÉMUSIUM<br>All Right Reserved © <a href="http://tyrolium.fr/"> TYROLIUM</a><br>Create by Maxime Tournier</span>
+            <?php if(!$_SESSION){?>
+                <button onclick="window.location.href = 'index.php?controller=user&task=login';" type="button" class="btn btn-primary">Panel</button>
+            <?php } else { ?>
+                <button onclick="window.location.href = 'index.php?controller=user&task=loggout';" type="button" class="btn btn-danger"><?php $tabUser = $_SESSION['user'];
+                    echo "Deconnecter de ".$tabUser['name']; ?></button>
+            <?php } ?>
         </div>
     </footer>
 </section>
