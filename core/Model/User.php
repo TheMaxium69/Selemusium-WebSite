@@ -15,7 +15,7 @@ class User extends Model
 
     function findByUsername(string $username)
     {
-        $resultat =  $this->pdo->prepare('SELECT * FROM users WHERE name = :name');
+        $resultat =  $this->pdo->prepare('SELECT * FROM usermusic WHERE name = :name');
         $resultat->execute([
             "name"=> $username
         ]);
