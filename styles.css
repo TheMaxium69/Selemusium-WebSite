@@ -129,6 +129,30 @@ nav a:hover{
     background-color: #0000a3;
 }
 
+@media (max-width: 697px) {
+    div.col-3{
+        flex: unset;
+        max-width: unset;
+        text-align: center;
+    }
+
+    div.col-9{
+        flex: unset;
+        max-width: unset;
+        text-align: center;
+    }
+
+    #btnDesk{
+        display: none;
+    }
+
+
+}
+@media (min-width: 698px) {
+    #btnMobil{
+        display: none;
+    }
+}
 
 
 

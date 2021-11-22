@@ -49,7 +49,7 @@
                                 <p class="card-text" style="margin-top: 15px">Auteur : <?php echo $music->credit; ?></p>
 
                                 <p class="card-text">Version : <?php echo $music->version; ?></p>
-                                <a href="<?php echo $music->url; ?>" class="btn btn-primary">Lien vers la music</a>
+                                <a id="btnDesk" href="<?php echo $music->url; ?>" class="btn btn-primary">Lien vers la music</a>
                             </div>
                             <div class="col-3">
                                 <p><u>Date du projet</u></p>
@@ -57,6 +57,7 @@
                                 <?php if(!empty($music->end_project)) { ?>
                                 <p class="card-text">Fin : <?php echo $music->end_project; ?></p>
                                 <?php } ?>
+                                <a id="btnMobil" href="<?php echo $music->url; ?>" class="btn btn-primary">Lien vers la music</a>
                             </div>
                         </div>
                     </div>
