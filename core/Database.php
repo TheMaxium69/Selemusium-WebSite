@@ -8,11 +8,16 @@ class Database
         $APP_ENV = "DEV";
 
         if ($APP_ENV == "DEV"){
-            $pdo = new PDO('mysql:host=localhost;dbname=tyromusic','site' ,'yb543Q?DPafb6ooM', [
+            
+            include "D:/xampp/htdocs/DB-selemusium.php";
+            
+            /*
+            $pdo = new PDO('mysql:host=localhost;dbname=exemple','exemple' ,'exemple', [
                     PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,
                     PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_OBJ,
                     PDO::ATTR_PERSISTENT
                 ]);
+            */
 
         } else if ($APP_ENV){
 
