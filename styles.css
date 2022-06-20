@@ -84,6 +84,42 @@ nav a:hover{
     }
 }
 
+#artomyx .jumbotron{
+    background: #14181C;
+}
+
+#artomyx img{
+    transform: translate3d(0, 0, 0);
+    transition: transform 0.2s ease-out;
+    will-change: transform;
+}
+
+#artomyx img:hover{
+    transform: translate(0, -15px);
+    transform: translate3d(0, -15px, 0);
+}
+        
+#artomyx a{
+    background-color: #0000a3;
+    margin-right: 4px;
+    border: 1px solid #00007e;
+}
+
+#artomyx a.second{
+    background-color: #E11AEE;
+    border: 1px solid #75007c;
+}
+
+#artomyx a.txt{
+    background: unset;
+    color: white;
+    margin-right: 0px;
+    border: unset;
+}
+
+#artomyx strong {
+    font-weight: bold;
+}
 
 #title h2 {
     margin-top: 60px;
@@ -127,6 +163,7 @@ nav a:hover{
 
 #music a{
     background-color: #0000a3;
+    border: 1px solid #00007e;
 }
 
 @media (max-width: 697px) {

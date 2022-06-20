@@ -4,11 +4,59 @@
             <article>
                 <h2 class="title">Sélémusium</h2>
                 <br>
-                <h5>Projet musical de l'entreprise Tyrolium,<br> qui réalise tout son branding musicial<br>
-                mais qui aussi réalise des remix et musique original <br> qui les passionne et nous les mettons en avant ici</h5>
+                <h5>Projet musical de l'entreprise Tyrolium, <br> qui réalise tout son branding musical<br> 
+Mais qui réalise aussi des remix et musiques originals <br> qui nous passionnent et nous les mettons en avant ici</h5>
             </article>
         </div>
     </section>
+    <?php 
+    $isAlbum = true;
+    
+    if($isAlbum){
+    ?>
+    <section id="artomyx">
+        <br>
+        <div class="container">
+    
+            <div class="jumbotron">
+                
+              <div class="row">
+                  
+                  <div class="col-3">
+        
+                    <img src="https://tyrolium.fr/Contenu/Image/artomyx.png" style="width: 100%">
+                      
+                  </div>
+                  
+                  <div class="col">
+                  
+                    <h1 class="display-4">Nouvel Album Disponible</h1>
+                    <p class="lead">
+                        Sélémusium sort son premier album <strong>Artomyx</strong> <br>
+                        - Disponible sur toutes les plateformes de Streaming<br>
+                        - Disponible en CD seulement en precommande<br>
+                        - 6 Tracks totalement Inédites (+Bonus Tracks)
+                    </p>
+                      
+                  </div>
+                  
+              </div>
+        
+              <hr class="my-4" style="background: rgb(161, 161, 161);">
+                
+              <p>Cette album sort à l'occasion des 5 ans de <a class="txt" href="https://tyrolium.fr">Tyrolium</a> qui detien Sélémusium</p>
+              
+                
+                <a href="https://artomyx.selemusium.xyz/preco.html" class="btn btn-primary ">Précommandez l'album</a>
+                <a href="https://artomyx.selemusium.xyz/" class="btn btn-primary second">Écoutez l'album</a>
+                <a href="https://www.youtube.com/watch?v=s_6V9HDs4YA" class="btn btn-primary">Voir le trailer</a>
+                
+            </div>
+            
+        </div>
+        
+    </section>
+    <?php } ?>
     <section id="title">
         <div class="container">
             <h2 class="title">Nos Musiques</h2>
@@ -49,7 +97,7 @@
                                 <p class="card-text" style="margin-top: 15px">Auteur : <?php echo $music->credit; ?></p>
 
                                 <p class="card-text">Version : <?php echo $music->version; ?></p>
-                                <a id="btnDesk" href="<?php echo $music->url; ?>" class="btn btn-primary">Lien vers la music</a>
+                                <a id="btnDesk" href="<?php echo $music->url; ?>" class="btn btn-primary">Lien vers la musique</a>
                             </div>
                             <div class="col-3">
                                 <p><u>Date du projet</u></p>
@@ -57,7 +105,7 @@
                                 <?php if(!empty($music->end_project)) { ?>
                                 <p class="card-text">Fin : <?php echo $music->end_project; ?></p>
                                 <?php } ?>
-                                <a id="btnMobil" href="<?php echo $music->url; ?>" class="btn btn-primary">Lien vers la music</a>
+                                <a id="btnMobil" href="<?php echo $music->url; ?>" class="btn btn-primary">Lien vers la musique</a>
                             </div>
                         </div>
                     </div>
