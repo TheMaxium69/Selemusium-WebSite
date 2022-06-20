@@ -18,8 +18,8 @@ abstract class Model
 
 
 /**
- * trouver un garage par son id
- * renvoie un tableau contenant un garage, ou un booleen
+ * trouver une music par son id
+ * renvoie un tableau contenant un music, ou un booleen
  * si inexistant
  * 
  * @param integer $id
@@ -39,9 +39,9 @@ public function find(int $id)
   return $item;
 
 }
-    /**
+/**
  * retourne un tableau contenant tous les items de 
- * la table garages
+ * la table music
  * 
  * @return array
  */
@@ -56,6 +56,25 @@ public function findAll(string $className) : array
         return $items;
 
 }
+    
+/**
+ * retourne un tableau contenant tous les items de 
+ * la table music, avec un orde inverse
+ * 
+ * @return array
+ */
+public function findAllInverse(string $className) : array
+{
+       
+
+        $resultat =  $this->pdo->query("SELECT * FROM {$this->table} ORDER BY id DESC");
+        
+        $items = $resultat->fetchAll( PDO::FETCH_CLASS, $className);
+
+        return $items;
+
+}
+
 
 
 /**

@@ -60,6 +60,9 @@ Mais qui réalise aussi des remix et musiques originals <br> qui nous passionnen
     <section id="title">
         <div class="container">
             <h2 class="title">Nos Musiques</h2>
+                <?php if($_SESSION){?>
+                        <button onclick="window.location.href = 'index.php?controller=user&task=create';" type="button" class="btn btn-primary">Poster une musique</button>
+                <?php } ?>
         </div>
     </section>
     <section id="music" class="container">
@@ -113,25 +116,21 @@ Mais qui réalise aussi des remix et musiques originals <br> qui nous passionnen
             <?php
         } }
 
-        if ($nbMusic < $total){
-            var_dump($nbMusic, $total);
-            ?>
-
-            <a id="musicAffiche" href="index.php" class="btn btn-primary">retours</a>
-
-            <?php
+        if ($nbMusic <= $total){
 
         } else if ($nbMusic >= $total ){ ?>
 
 
 
-        <?php } else { ?>
+        <?php } if($nbMusic < $total) { ?>
 
-            <a id="musicAffiche" href="index.php?controller=music&task=index&nb=<?php echo $nbBtn+1 ?>" class="btn btn-primary">Plus</a>
+            <a id="musicAffiche" style="width: 100%; margin-bottom: 20px;" href="index.php?controller=music&task=index&nb=<?php echo $nbBtn+1 ?>" class="btn btn-primary">Plus</a>
 
-        <?php }
-
-        ?>
+        <?php } if(!empty($_GET['nb'])){ ?>
+            
+            <a id="musicAffiche" style="width: 100%" href="index.php" class="btn btn-primary">Retours</a>
+        
+        <?php } ?>
 
     </section>
     <hr class="" style="background-color: #808080">

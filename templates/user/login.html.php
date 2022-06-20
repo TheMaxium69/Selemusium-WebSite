@@ -5,7 +5,7 @@
         <h4><?php echo $reponse; ?></h4>
         <form class="container" method="POST" action="index.php?controller=user&task=login">
             <div class="form-group">
-                <label for="username">Username</label>
+                <label for="username">Email</label>
                 <input type="text" class="form-control" name="username" required>
             </div>
             <div class="form-group">

@@ -9,7 +9,7 @@ class Music extends Controller
     public function index()
     {
 
-        $musics = $this->model->findAll($this->modelName);
+        $musics = $this->model->findAllInverse($this->modelName);
         $total = $this->model->count();
 
         if(!empty($_GET['nb']) && $_GET['nb'] != 0){
